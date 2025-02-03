@@ -1,6 +1,6 @@
 import {CorsOptions} from "cors";
 
-const corsWhitelist = ["http://localhost:3000"];
+export const corsWhitelist = ["http://localhost:3000"];
 
 export const corsOptions: CorsOptions = {
     origin: function (origin, callback) {
