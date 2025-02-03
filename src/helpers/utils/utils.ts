@@ -59,4 +59,7 @@ export const decodeJwt = (token: string): IJwtDecoded | null => {
 export const generateRandomString = (size: number = 20): string => randomBytes(size).toString("hex").slice(0, size);
 
 export const getRandomValueFromArray = <T>(array: T[]): T => array[Math.floor(Math.random() * array.length)];
+
 export const getRandomIndexFromArray = <T>(array: T[]): number => Math.floor(Math.random() * array.length);
+
+export const getCorsWhitelist = (): string[] => process.env.CORS_WHITELIST?.split(",") || [];

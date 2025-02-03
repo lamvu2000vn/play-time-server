@@ -2,12 +2,12 @@ import {Server as HttpServer} from "http";
 import {Server} from "socket.io";
 import SocketHandler from "./SocketHandler";
 import MatchTimeHandler from "./MatchTimeHandler";
-import {corsWhitelist} from "../config/cors";
+import {getCorsWhitelist} from "../helpers/utils/utils";
 
 export default function (httpServer: HttpServer) {
     const io = new Server(httpServer, {
         cors: {
-            origin: corsWhitelist,
+            origin: getCorsWhitelist(),
             methods: ["GET", "POST"],
             credentials: true,
         },

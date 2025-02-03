@@ -7,7 +7,6 @@ import connectDB from "./database/database";
 import {createServer} from "http";
 import initializeSocket from "./socket/initializeSocket";
 import cors from "cors";
-import "dotenv/config";
 import {corsOptions} from "./config/cors";
 
 (async () => {
