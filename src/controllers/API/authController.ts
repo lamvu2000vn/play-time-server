@@ -9,6 +9,7 @@ import {IPaidItem} from "../../database/models/PaidItem";
 import {Document} from "mongoose";
 import GameStatistics from "../../database/models/GameStatistics";
 import {ILoginPayload, IRegisterUserPayload, IUserIdentifyPayload} from "../../helpers/shared/interfaces/apiInterfaces";
+import ms, {StringValue} from "ms";
 
 export const register = async (req: Request, res: Response): Promise<void> => {
     try {
@@ -66,9 +67,13 @@ export const login = async (req: Request, res: Response) => {
             return;
         }
 
-        const accessToken = jwt.sign({userId: user.id!}, process.env.JWT_SECRET!, {
-            expiresIn: process.env.JWT_EXPIRATION || "1d",
-        });
+        const jwtSecret = (process.env.JWT_SECRET || "") as jwt.Secret;
+        const payload = {userId: user._id.toString()};
+        const expiresIn = ms((process.env.JWT_EXPIRATION || "1d") as StringValue);
+
+        if (!jwtSecret) throw new Error("Can not authenticate");
+
+        const accessToken = generateAccessToken(payload, expiresIn);
         const refreshToken = rememberMe ? randomBytes(64).toString("hex") : null;
 
         const newToken = new Token({
@@ -120,7 +125,9 @@ export const refreshToken = async (req: Request, res: Response): Promise<void> =
             return;
         }
 
-        const newAccessToken = generateAccessToken({userId: userToken.userId}, process.env.JWT_EXPIRATION || "1d");
+        const expiresIn = (process.env.JWT_EXPIRATION || "1d") as StringValue;
+
+        const newAccessToken = generateAccessToken({userId: userToken.userId}, expiresIn);
 
         userToken.accessToken = newAccessToken;
 

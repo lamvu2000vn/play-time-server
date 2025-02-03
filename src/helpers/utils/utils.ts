@@ -2,6 +2,7 @@ import {IJwtDecoded} from "../shared/interfaces/interfaces";
 import jwt from "jsonwebtoken";
 import {randomBytes} from "crypto";
 import {IApiResponse} from "../shared/interfaces/apiInterfaces";
+import ms, {StringValue} from "ms";
 
 export const getRandomDefaultAvatarUrl = (): string => {
     const avatarUrls = [
@@ -42,8 +43,16 @@ export const getApiResponse = (status: number, message: string, data: object | n
     return response;
 };
 
-export const generateAccessToken = (payload: object, expiresIn: number | string): string => {
-    return jwt.sign(payload, process.env.JWT_SECRET!, {expiresIn});
+export const generateAccessToken = (payload: object, expiresIn: number | StringValue): string => {
+    try {
+        return jwt.sign(payload, process.env.JWT_SECRET!, {
+            expiresIn: typeof expiresIn === "number" ? expiresIn : ms(expiresIn),
+        });
+    } catch (err: Error | unknown) {
+        console.log("🚀 ~ generateAccessToken ~ err:", err);
+
+        throw err;
+    }
 };
 
 export const decodeJwt = (token: string): IJwtDecoded | null => {
