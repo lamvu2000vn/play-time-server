@@ -28,6 +28,6 @@ import {corsOptions} from "./config/cors";
     app.use("/api", apiRoutes);
 
     httpServer.listen(port, () => {
-        console.log("Server is running");
+        console.log(`Server is running on port:${port}`);
     });
 })();
