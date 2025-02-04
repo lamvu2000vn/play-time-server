@@ -11,7 +11,7 @@ import {corsOptions} from "./config/cors";
 
 (async () => {
     const app = express();
-    const port = 3001;
+    const port = process.env.HTTP_PORT || 3000;
     const httpServer = createServer(app);
 
     await connectDB();
@@ -28,6 +28,6 @@ import {corsOptions} from "./config/cors";
     app.use("/api", apiRoutes);
 
     httpServer.listen(port, () => {
-        console.log(`Server is running on http://localhost:${port}`);
+        console.log("Server is running");
     });
 })();
