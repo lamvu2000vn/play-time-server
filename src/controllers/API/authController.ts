@@ -89,9 +89,10 @@ export const login = async (req: Request, res: Response) => {
             expiryDate.setDate(expiryDate.getDate() + 7); // Cookie expires in 7 days
 
             res.cookie("refreshToken", refreshToken, {
+                path: "/",
                 httpOnly: true,
                 secure: true,
-                sameSite: true,
+                sameSite: "strict",
                 expires: expiryDate,
             });
         }
