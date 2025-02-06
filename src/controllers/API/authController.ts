@@ -92,8 +92,9 @@ export const login = async (req: Request, res: Response) => {
                 path: "/",
                 httpOnly: true,
                 secure: true,
-                sameSite: "lax",
+                sameSite: "none",
                 expires: expiryDate,
+                domain: ".onrender.com",
             });
         }
 
