@@ -92,7 +92,7 @@ export const login = async (req: Request, res: Response) => {
                 path: "/",
                 httpOnly: true,
                 secure: true,
-                sameSite: "strict",
+                sameSite: "lax",
                 expires: expiryDate,
                 domain: ".onrender.com",
             });
