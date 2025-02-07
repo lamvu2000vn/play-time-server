@@ -94,7 +94,6 @@ export const login = async (req: Request, res: Response) => {
                 secure: true,
                 sameSite: "strict",
                 expires: expiryDate,
-                domain: ".onrender.com",
             });
         }
 
