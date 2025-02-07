@@ -91,7 +91,8 @@ export const login = async (req: Request, res: Response) => {
             res.cookie("refreshToken", refreshToken, {
                 path: "/",
                 httpOnly: true,
-                secure: process.env.NODE_ENV === "production",
+                secure: true,
+                sameSite: "strict",
                 expires: expiryDate,
                 domain: ".onrender.com",
             });
