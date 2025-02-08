@@ -44,18 +44,21 @@ const initialData = async () => {
                     alternativeName: "tic-tac-toe",
                     imageUrl:
                         "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007977/images/games/tic-tac-toe-game.png.png",
+                    translation: "",
                 },
                 {
                     name: "15 Puzzle",
                     alternativeName: "15-puzzle",
                     imageUrl:
                         "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007977/images/games/15-puzzle-game.png.png",
+                    translation: "",
                 },
                 {
                     name: "Memory",
                     alternativeName: "memory",
                     imageUrl:
                         "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/games/memory-game.png.png",
+                    translation: "",
                 },
             ]);
         }

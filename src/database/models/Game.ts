@@ -5,7 +5,7 @@ export interface IGame {
     _id: Types.ObjectId;
     name: string;
     alternativeName: string;
-    translations: string;
+    translation: string;
     imageUrl: string;
     status: number;
     requirement: string;
@@ -25,7 +25,7 @@ const gameSchema = new Schema<IGame>(
             required: true,
             index: true,
         },
-        translations: {
+        translation: {
             type: String,
             required: true,
         },
