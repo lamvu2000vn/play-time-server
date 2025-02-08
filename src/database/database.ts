@@ -42,17 +42,20 @@ const initialData = async () => {
                 {
                     name: "Tic Tac Toe",
                     alternativeName: "tic-tac-toe",
-                    imageUrl: "/assets/images/games/tic-tac-toe-game.png",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007977/images/games/tic-tac-toe-game.png.png",
                 },
                 {
                     name: "15 Puzzle",
                     alternativeName: "15-puzzle",
-                    imageUrl: "/assets/images/games/15-puzzle-game.png",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007977/images/games/15-puzzle-game.png.png",
                 },
                 {
                     name: "Memory",
                     alternativeName: "memory",
-                    imageUrl: "/assets/images/games/memory-game.png",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/games/memory-game.png.png",
                 },
             ]);
         }
@@ -79,13 +82,15 @@ const initialData = async () => {
                 {
                     name: "Avatar",
                     alternativeName: "avatar",
-                    imageUrl: "/assets/images/items/avatars/avatar-image.png",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007988/images/items/avatars/avatar-image.png.png",
                     status: 1,
                 },
                 {
                     name: "Sticker",
                     alternativeName: "sticker",
-                    imageUrl: "/assets/images/items/stickers/sticker-image.png",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007980/images/items/stickers/sticker-image.png.png",
                     status: 1,
                 },
             ]);
@@ -100,7 +105,8 @@ const initialData = async () => {
                 {
                     typeId: avatarTypeId,
                     name: "Khỉ ngộ ngỉnh",
-                    imageUrl: "/assets/images/items/avatars/animal-1.png",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/avatars/animal-1.png.png",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -108,7 +114,8 @@ const initialData = async () => {
                 {
                     typeId: avatarTypeId,
                     name: "Chó nâu vui vẻ",
-                    imageUrl: "/assets/images/items/avatars/animal-2.png",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/avatars/animal-2.png.png",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -116,7 +123,8 @@ const initialData = async () => {
                 {
                     typeId: avatarTypeId,
                     name: "Chồn đại ca",
-                    imageUrl: "/assets/images/items/avatars/animal-3.png",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/avatars/animal-3.png.png",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -124,7 +132,8 @@ const initialData = async () => {
                 {
                     typeId: avatarTypeId,
                     name: "Gấu cam hài",
-                    imageUrl: "/assets/images/items/avatars/animal-4.png",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007979/images/items/avatars/animal-4.png.png",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -132,7 +141,8 @@ const initialData = async () => {
                 {
                     typeId: avatarTypeId,
                     name: "Cáo tinh khôi",
-                    imageUrl: "/assets/images/items/avatars/animal-5.png",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007979/images/items/avatars/animal-5.png.png",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -140,7 +150,8 @@ const initialData = async () => {
                 {
                     typeId: avatarTypeId,
                     name: "Chó nâu nâu",
-                    imageUrl: "/assets/images/items/avatars/animal-6.png",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007979/images/items/avatars/animal-6.png.png",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -148,7 +159,8 @@ const initialData = async () => {
                 {
                     typeId: avatarTypeId,
                     name: "Heo hồng",
-                    imageUrl: "/assets/images/items/avatars/animal-7.png",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/avatars/animal-7.png.png",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -156,7 +168,8 @@ const initialData = async () => {
                 {
                     typeId: avatarTypeId,
                     name: "Chó thông minh",
-                    imageUrl: "/assets/images/items/avatars/animal-8.png",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/avatars/animal-8.png.png",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -164,7 +177,8 @@ const initialData = async () => {
                 {
                     typeId: avatarTypeId,
                     name: "Hưu sừng tấm",
-                    imageUrl: "/assets/images/items/avatars/animal-9.png",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007979/images/items/avatars/animal-9.png.png",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -172,7 +186,8 @@ const initialData = async () => {
                 {
                     typeId: avatarTypeId,
                     name: "Nai ngơ ngác",
-                    imageUrl: "/assets/images/items/avatars/animal-10.png",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007979/images/items/avatars/animal-10.png.png",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -180,7 +195,8 @@ const initialData = async () => {
                 {
                     typeId: avatarTypeId,
                     name: "Gấu nâu dễ thương",
-                    imageUrl: "/assets/images/items/avatars/animal-11.png",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007979/images/items/avatars/animal-11.png.png",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -188,7 +204,8 @@ const initialData = async () => {
                 {
                     typeId: avatarTypeId,
                     name: "Mèo cam",
-                    imageUrl: "/assets/images/items/avatars/animal-12.png",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/avatars/animal-12.png.png",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -196,7 +213,8 @@ const initialData = async () => {
                 {
                     typeId: avatarTypeId,
                     name: "Gấu panda",
-                    imageUrl: "/assets/images/items/avatars/animal-13.png",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007979/images/items/avatars/animal-13.png.png",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -204,7 +222,8 @@ const initialData = async () => {
                 {
                     typeId: avatarTypeId,
                     name: "Ngựa vằn nhanh nhẹn",
-                    imageUrl: "/assets/images/items/avatars/animal-14.png",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007979/images/items/avatars/animal-14.png.png",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -212,7 +231,8 @@ const initialData = async () => {
                 {
                     typeId: avatarTypeId,
                     name: "Voi trắng",
-                    imageUrl: "/assets/images/items/avatars/animal-15.png",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/avatars/animal-15.png.png",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -220,7 +240,8 @@ const initialData = async () => {
                 {
                     typeId: avatarTypeId,
                     name: "Thỏ tinh nghịch",
-                    imageUrl: "/assets/images/items/avatars/animal-16.png",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/avatars/animal-16.png.png",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -228,7 +249,8 @@ const initialData = async () => {
                 {
                     typeId: avatarTypeId,
                     name: "Gà con chíp chíp",
-                    imageUrl: "/assets/images/items/avatars/default-avatar.png",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/avatars/default-avatar.png.png",
                     price: 0,
                     isDefault: true,
                     status: 1,
@@ -238,7 +260,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "laugh-1",
-                    imageUrl: "/assets/images/items/stickers/laugh-1.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/stickers/laugh-1.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -246,7 +269,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "laugh-2",
-                    imageUrl: "/assets/images/items/stickers/laugh-2.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/stickers/laugh-2.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -254,7 +278,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "laugh-3",
-                    imageUrl: "/assets/images/items/stickers/laugh-3.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007979/images/items/stickers/laugh-3.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -262,7 +287,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "laugh-4",
-                    imageUrl: "/assets/images/items/stickers/laugh-4.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/stickers/laugh-4.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -270,7 +296,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "laugh-5",
-                    imageUrl: "/assets/images/items/stickers/laugh-5.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007980/images/items/stickers/laugh-5.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -278,7 +305,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "like-1",
-                    imageUrl: "/assets/images/items/stickers/like-1.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007980/images/items/stickers/like-1.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -286,7 +314,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "like-2",
-                    imageUrl: "/assets/images/items/stickers/like-2.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007984/images/items/stickers/like-2.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -294,7 +323,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "cool-1",
-                    imageUrl: "/assets/images/items/stickers/cool-1.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007985/images/items/stickers/cool-1.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -302,7 +332,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "cool-2",
-                    imageUrl: "/assets/images/items/stickers/cool-2.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007980/images/items/stickers/cool-2.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -310,7 +341,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "cool-3",
-                    imageUrl: "/assets/images/items/stickers/cool-3.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007979/images/items/stickers/cool-3.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -318,7 +350,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "cool-4",
-                    imageUrl: "/assets/images/items/stickers/cool-4.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007981/images/items/stickers/cool-4.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -326,7 +359,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "cool-5",
-                    imageUrl: "/assets/images/items/stickers/cool-5.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/stickers/cool-5.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -334,7 +368,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "nervous-1",
-                    imageUrl: "/assets/images/items/stickers/nervous-1.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/stickers/nervous-1.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -342,7 +377,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "nervous-2",
-                    imageUrl: "/assets/images/items/stickers/nervous-2.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007979/images/items/stickers/nervous-2.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -350,7 +386,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "nervous-3",
-                    imageUrl: "/assets/images/items/stickers/nervous-3.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007979/images/items/stickers/nervous-3.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -358,7 +395,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "nervous-4",
-                    imageUrl: "/assets/images/items/stickers/nervous-4.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007980/images/items/stickers/nervous-4.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -366,7 +404,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "nervous-5",
-                    imageUrl: "/assets/images/items/stickers/nervous-5.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/stickers/nervous-5.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -374,7 +413,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "happy-1",
-                    imageUrl: "/assets/images/items/stickers/happy-1.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/stickers/happy-1.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -382,7 +422,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "happy-2",
-                    imageUrl: "/assets/images/items/stickers/happy-2.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007984/images/items/stickers/happy-2.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -390,7 +431,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "happy-3",
-                    imageUrl: "/assets/images/items/stickers/happy-3.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007979/images/items/stickers/happy-3.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -398,7 +440,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "happy-4",
-                    imageUrl: "/assets/images/items/stickers/happy-4.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007977/images/items/stickers/happy-4.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -406,7 +449,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "happy-5",
-                    imageUrl: "/assets/images/items/stickers/happy-5.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007984/images/items/stickers/happy-5.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -414,7 +458,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "angry-1",
-                    imageUrl: "/assets/images/items/stickers/angry-1.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/stickers/angry-1.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -422,7 +467,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "angry-2",
-                    imageUrl: "/assets/images/items/stickers/angry-2.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007979/images/items/stickers/angry-2.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -430,7 +476,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "angry-3",
-                    imageUrl: "/assets/images/items/stickers/angry-3.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/stickers/angry-3.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -438,7 +485,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "angry-4",
-                    imageUrl: "/assets/images/items/stickers/angry-4.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007980/images/items/stickers/angry-4.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -446,7 +494,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "angry-5",
-                    imageUrl: "/assets/images/items/stickers/angry-5.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/stickers/angry-5.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -454,7 +503,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "cry-1",
-                    imageUrl: "/assets/images/items/stickers/cry-1.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007980/images/items/stickers/cry-1.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -462,7 +512,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "cry-2",
-                    imageUrl: "/assets/images/items/stickers/cry-2.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007979/images/items/stickers/cry-2.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -470,7 +521,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "cry-3",
-                    imageUrl: "/assets/images/items/stickers/cry-3.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/stickers/cry-3.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -478,7 +530,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "cry-4",
-                    imageUrl: "/assets/images/items/stickers/cry-4.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007980/images/items/stickers/cry-4.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -486,7 +539,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "cry-5",
-                    imageUrl: "/assets/images/items/stickers/cry-5.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007982/images/items/stickers/cry-5.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -494,7 +548,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "bye-1",
-                    imageUrl: "/assets/images/items/stickers/bye-1.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007979/images/items/stickers/bye-1.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -502,7 +557,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "bye-2",
-                    imageUrl: "/assets/images/items/stickers/bye-2.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007979/images/items/stickers/bye-2.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -510,7 +566,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "bye-3",
-                    imageUrl: "/assets/images/items/stickers/bye-3.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007979/images/items/stickers/bye-3.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -518,7 +575,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "bye-4",
-                    imageUrl: "/assets/images/items/stickers/bye-4.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007979/images/items/stickers/bye-4.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -526,7 +584,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "bye-5",
-                    imageUrl: "/assets/images/items/stickers/bye-5.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007980/images/items/stickers/bye-5.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -534,7 +593,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "send-love-1",
-                    imageUrl: "/assets/images/items/stickers/send-love-1.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007979/images/items/stickers/send-love-1.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -542,7 +602,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "send-love-2",
-                    imageUrl: "/assets/images/items/stickers/send-love-2.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007981/images/items/stickers/send-love-2.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -550,7 +611,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "send-love-3",
-                    imageUrl: "/assets/images/items/stickers/send-love-3.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007979/images/items/stickers/send-love-3.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -558,7 +620,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "send-love-4",
-                    imageUrl: "/assets/images/items/stickers/send-love-4.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/stickers/send-love-4.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -566,7 +629,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "thumb-down-1",
-                    imageUrl: "/assets/images/items/stickers/thumb-down-1.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/stickers/thumb-down-1.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -574,7 +638,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "thumb-down-2",
-                    imageUrl: "/assets/images/items/stickers/thumb-down-2.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007980/images/items/stickers/thumb-down-2.webp.webp",
                     price: 100,
                     isDefault: false,
                     status: 1,
@@ -582,7 +647,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "default-sticker-1",
-                    imageUrl: "/assets/images/items/stickers/default-1.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007981/images/items/stickers/default-1.webp.webp",
                     price: 0,
                     isDefault: true,
                     status: 1,
@@ -590,7 +656,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "default-sticker-2",
-                    imageUrl: "/assets/images/items/stickers/default-2.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/stickers/default-2.webp.webp",
                     price: 0,
                     isDefault: true,
                     status: 1,
@@ -598,7 +665,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "default-sticker-3",
-                    imageUrl: "/assets/images/items/stickers/default-3.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007981/images/items/stickers/default-3.webp.webp",
                     price: 0,
                     isDefault: true,
                     status: 1,
@@ -606,7 +674,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "default-sticker-4",
-                    imageUrl: "/assets/images/items/stickers/default-4.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007981/images/items/stickers/default-4.webp.webp",
                     price: 0,
                     isDefault: true,
                     status: 1,
@@ -614,7 +683,8 @@ const initialData = async () => {
                 {
                     typeId: stickerTypeId,
                     name: "default-sticker-5",
-                    imageUrl: "/assets/images/items/stickers/default-5.webp",
+                    imageUrl:
+                        "http://res.cloudinary.com/dorvt3ync/image/upload/v1739007979/images/items/stickers/default-5.webp.webp",
                     price: 0,
                     isDefault: true,
                     status: 1,
