@@ -92,18 +92,10 @@ export const login = async (req: Request, res: Response) => {
                 path: "/",
                 httpOnly: true,
                 secure: true,
-                sameSite: "none",
+                sameSite: false,
                 // expires: expiryDate,
                 maxAge: 7 * 24 * 60 * 60 * 1000,
-            });
-
-            res.cookie("test", "abc", {
-                path: "/",
-                httpOnly: true,
-                secure: true,
-                sameSite: "none",
-                // expires: expiryDate,
-                maxAge: 7 * 24 * 60 * 60 * 1000,
+                domain: process.env.NODE_ENV === "production" ? process.env.RENDER_EXTERNAL_HOSTNAME : undefined,
             });
         }
 
