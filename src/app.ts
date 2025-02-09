@@ -21,6 +21,7 @@ import cookieSession from "cookie-session";
     app.use(
         cookieSession({
             name: "session",
+            keys: ["key1"],
             secure: true,
             httpOnly: true,
             sameSite: process.env.NODE_ENV === "production" ? "none" : undefined,
