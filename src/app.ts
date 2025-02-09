@@ -8,6 +8,7 @@ import {createServer} from "http";
 import initializeSocket from "./socket/initializeSocket";
 import cors from "cors";
 import {corsOptions} from "./config/cors";
+import cookieSession from "cookie-session";
 
 (async () => {
     const app = express();
@@ -16,6 +17,16 @@ import {corsOptions} from "./config/cors";
 
     await connectDB();
 
+    app.set("trust proxy", 1);
+    app.use(
+        cookieSession({
+            name: "session",
+            secure: true,
+            httpOnly: true,
+            sameSite: process.env.NODE_ENV === "production" ? "none" : undefined,
+            maxAge: 24 * 60 * 60 * 1000, // 24 hours
+        })
+    );
     app.use(logger("dev"));
     app.use(express.json());
     app.use(express.urlencoded({extended: false}));
@@ -26,6 +37,9 @@ import {corsOptions} from "./config/cors";
     initializeSocket(httpServer);
 
     app.use("/api", apiRoutes);
+    app.use("/", (_, res) => {
+        res.send("Hello, world!");
+    });
 
     httpServer.listen(port, () => {
         console.log(`Server is running on port:${port}`);
