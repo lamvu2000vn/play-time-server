@@ -85,17 +85,12 @@ export const login = async (req: Request, res: Response) => {
         await newToken.save();
 
         if (refreshToken) {
-            const expiryDate = new Date();
-            expiryDate.setDate(expiryDate.getDate() + 7); // Cookie expires in 7 days
-
             res.cookie("refreshToken", refreshToken, {
                 path: "/",
                 httpOnly: true,
-                secure: true,
+                secure: process.env.NODE_ENV === "production",
                 sameSite: "none",
-                // expires: expiryDate,
-                maxAge: 7 * 24 * 60 * 60 * 1000,
-                domain: process.env.NODE_ENV === "production" ? process.env.RENDER_EXTERNAL_HOSTNAME : undefined,
+                maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
             });
         }
 
