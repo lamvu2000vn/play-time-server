@@ -86,12 +86,19 @@ export const login = async (req: Request, res: Response) => {
         await newToken.save();
 
         if (refreshToken) {
-            res.cookie("refreshToken", refreshToken, {
-                httpOnly: true,
-                secure: process.env.NODE_ENV === "production",
-                sameSite: process.env.NODE_ENV === "production" ? false : undefined,
-                maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
-            });
+            // res.cookie("refreshToken", refreshToken, {
+            //     httpOnly: true,
+            //     secure: process.env.NODE_ENV === "production",
+            //     sameSite: process.env.NODE_ENV === "production" ? "none" : undefined,
+            //     maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+            // });
+
+            res.setHeader(
+                "Set-Cookie",
+                `refreshToken=${refreshToken}; HttpOnly; Secure=${process.env.NODE_ENV === "production"}; ${
+                    process.env.NODE_ENV === "production" ? "SameSite=None;" : ""
+                } Max-Age=604800`
+            );
         }
 
         res.json(
