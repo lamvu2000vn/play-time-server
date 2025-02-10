@@ -93,10 +93,12 @@ export const login = async (req: Request, res: Response) => {
             //     maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
             // });
 
+            const isProduction = process.env.NODE_ENV === "production";
+
             res.setHeader(
                 "Set-Cookie",
-                `refreshToken=${refreshToken}; HttpOnly; Secure=${process.env.NODE_ENV === "production"}; ${
-                    process.env.NODE_ENV === "production" ? "SameSite=None;" : ""
+                `refreshToken=${refreshToken}; Path=/; HttpOnly; Secure=${isProduction}; ${
+                    isProduction ? "SameSite=None;" : "Lax"
                 } Max-Age=604800`
             );
         }
