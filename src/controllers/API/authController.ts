@@ -33,7 +33,8 @@ export const register = async (req: Request, res: Response): Promise<void> => {
             username,
             password: hashedPassword,
             name,
-            avatarUrl: "/assets/images/items/avatars/default-avatar.png",
+            avatarUrl:
+                "https://res.cloudinary.com/dorvt3ync/image/upload/v1739007978/images/items/avatars/default-avatar.png.png",
             coin: 1000,
         });
 
@@ -86,10 +87,9 @@ export const login = async (req: Request, res: Response) => {
 
         if (refreshToken) {
             res.cookie("refreshToken", refreshToken, {
-                path: "/",
                 httpOnly: true,
                 secure: process.env.NODE_ENV === "production",
-                sameSite: "none",
+                sameSite: process.env.NODE_ENV === "production" ? false : undefined,
                 maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
             });
         }

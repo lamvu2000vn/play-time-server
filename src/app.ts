@@ -8,7 +8,6 @@ import {createServer} from "http";
 import initializeSocket from "./socket/initializeSocket";
 import cors from "cors";
 import {corsOptions} from "./config/cors";
-import cookieSession from "cookie-session";
 
 (async () => {
     const app = express();
@@ -16,18 +15,6 @@ import cookieSession from "cookie-session";
     const httpServer = createServer(app);
 
     await connectDB();
-
-    app.set("trust proxy", 1);
-    app.use(
-        cookieSession({
-            name: "session",
-            keys: ["key1"],
-            secure: true,
-            httpOnly: true,
-            sameSite: process.env.NODE_ENV === "production" ? "none" : undefined,
-            maxAge: 24 * 60 * 60 * 1000, // 24 hours
-        })
-    );
     app.use(logger("dev"));
     app.use(express.json());
     app.use(express.urlencoded({extended: false}));
